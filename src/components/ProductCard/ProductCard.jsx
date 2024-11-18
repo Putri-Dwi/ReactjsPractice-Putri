@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
   return (
     <Link
       to={`/products/${product.slug}` ?? ''}
-      className="flex flex-col max-w-[370px] flex-wrap p-[16px] bg-white border border-black rounded-lg shadow-lg hover:shadow-xl hover:ring-4 hover:ring-[#E63946] hover:ring-opacity-50 active:ring-5 active:ring-[#6247eb] transition-all"
+      className="flex flex-col max-w-[370px] flex-wrap p-[16px] bg-white border border-black rounded-lg shadow-lg hover:shadow-xl hover:ring-4 hover:ring-[#E63946] hover:ring-opacity-50 active:ring-4 active:ring-[#E63946] active:ring-opacity-80 transition-all"
     >
       <img 
         src={product?.imageUrl ?? ''} 
